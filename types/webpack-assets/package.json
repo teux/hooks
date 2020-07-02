@@ -2,5 +2,8 @@
   "name": "@types/webpack-assets",
   "version": "0.0.0",
   "private": true,
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">16.0.0"
+  }
 }

@@ -1,4 +1,2 @@
 const foo = 'bar';
-export const useScroll = () => {
-
-}
+export const useScroll = () => alert(foo);

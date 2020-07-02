@@ -15,15 +15,16 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "plugins": [
-      {
-        "name": "@fimbul/mithotyn",
-        "displayErrorsAsWarnings": true
-      }
-    ],
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "es5"
-  }
+  },
+  "include": [
+    "packages/**/*.ts",
+    "packages/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

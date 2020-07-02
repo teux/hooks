@@ -1,9 +1,0 @@
-modules:
-  - '@fimbul/heimdall'
-files:
-  - '**/*.{ts,tsx}'
-project:
-  - packages/use-scroll/src
-  - packages/use-scroll-demo
-  - types
-reportUselessDirectives: error
