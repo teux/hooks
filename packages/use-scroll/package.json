@@ -1,0 +1,14 @@
+{
+  "name": "@teux/use-scroll",
+  "version": "0.0.0",
+  "description": "A React hook for watching scroll and implementing lazyload, parallax, and more",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "teux <github@teux.ru>",
+  "devDependencies": {
+    "@types/webpack-assets": "0.0.0"
+  },
+  "license": "MIT"
+}

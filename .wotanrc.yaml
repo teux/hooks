@@ -1,0 +1,259 @@
+rulesDirectories:
+  tslint: .
+  react: node_modules/tslint-react/rules
+  clean-code: node_modules/tslint-clean-code/dist/build
+  sonarts: node_modules/tslint-sonarts/lib/rules
+  microsoft: node_modules/tslint-microsoft-contrib
+  eslint: node_modules/tslint-eslint-rules/dist/rules
+rules:
+  # wotan
+  async-function-assignability: error
+  await-async-result: error
+  await-only-promise: error
+  ban-dom-globals: error
+  delete-only-optional-property: error
+  generator-require-yield: error
+  new-parens: error
+  no-case-declaration: error
+  no-debugger: error
+  no-duplicate-case: error
+  no-duplicate-spread-property: error
+  no-fallthrough: error
+  no-inferred-empty-object: off
+  no-invalid-assertion: error
+  no-misused-generics: off
+  no-nan-compare: error
+  no-octal-escape: error
+  no-restricted-property-access: error
+  no-return-await: error
+  no-unreachable-code: error
+  no-unsafe-finally: error
+  no-unstable-api-use: error
+  no-unused-expression: error
+  no-useless-assertion: error
+  no-useless-declare: error
+  no-useless-destructuring: error
+  no-useless-initializer: error
+  no-useless-predicate: error
+  no-useless-spread: error
+  no-useless-strict: error
+  no-useless-try-catch: error
+  parameter-properties: error
+  prefer-const: error
+  prefer-dot-notation: error
+  prefer-for-of: error
+  prefer-namespace-keyword: error
+  prefer-number-methods: error
+  prefer-object-spread: error
+  return-never-call: error
+  trailing-newline: error
+  try-catch-return-await: error
+  type-assertion: error
+  syntaxcheck: error
+  typecheck: error
+  # tslint
+  tslint/adjacent-overload-signatures: error
+  tslint/array-type:
+    severety: error
+    options: array-simple
+  tslint/arrow-return-shorthand:
+    severety: error
+    options: multiline
+  tslint/ban:
+    severity: error
+    options:
+      - - '*'
+        - hasOwnProperty
+  tslint/ban-comma-operator: error
+  tslint/ban-types:
+    severity: error
+    options:
+      - - Object
+      - - Function
+      - - Boolean
+      - - Number
+      - - String
+      - - Symbol
+  tslint/callable-types: error
+  tslint/class-name: error
+  tslint/encoding: error
+  tslint/interface-name:
+    severity: error
+    options: never-prefix
+  tslint/interface-over-type-literal: error
+  tslint/max-classes-per-file:
+    severity: off
+    options: 1
+  tslint/max-file-line-count:
+    severity: off
+    options: 400
+  tslint/no-arg: error
+  tslint/no-bitwise: error
+  tslint/no-boolean-literal-compare: error
+  tslint/no-conditional-assignment: error
+  tslint/no-duplicate-super: error
+  tslint/no-empty:
+    severity: error
+    options:
+      - allow-empty-catch
+  tslint/no-empty-interface: error
+  tslint/no-eval: error
+  tslint/no-duplicate-imports: error
+  tslint/no-import-side-effect:
+    severity: error
+    options:
+      ignore-module: (\.css|register|^codemirror.*|react-dates.*)$
+  tslint/no-inferrable-types: error
+  tslint/no-invalid-template-strings: error
+  tslint/no-invalid-this:
+    severity: error
+    options: check-function-in-method
+  tslint/no-misused-new: error
+  tslint/no-namespace:
+    severity: error
+    options: allow-declarations
+  tslint/no-non-null-assertion: off
+  tslint/no-object-literal-type-assertion: error
+  tslint/no-parameter-reassignment: error
+  tslint/no-reference: error
+  tslint/no-require-imports: error
+  tslint/no-sparse-arrays: error
+  tslint/no-string-throw: error
+  tslint/no-submodule-imports:
+    severity: error
+    options:
+      - react-dom/server
+      - react-intl/locale-data
+      - rxjs
+      - codemirror
+      - react-styleguidist/lib
+      - lowdb/adapters
+      - antlr4/error
+      - antlr4/tree
+      - antlr4/Lexer
+      - '@storybook/addon-actions'
+      - '@storybook/addon-knobs'
+      - 'react-image-lightbox'
+      - 'react-dates/lib'
+      - 'react-dates/initialize'
+  tslint/no-this-assignment:
+    severity: error
+    options:
+      allow-destructuring: true
+  tslint/no-unnecessary-callback-wrapper: error
+  tslint/no-unnecessary-class: error
+  tslint/no-unnecessary-qualifier: error
+  tslint/no-var-keyword: error
+  tslint/no-void-expression: off
+  tslint/object-literal-key-quotes:
+    severity: error
+    options: as-needed
+  tslint/object-literal-shorthand: error
+  tslint/prefer-function-over-method:
+    severity: error
+    options:
+      - allow-public
+      - allow-protected
+  tslint/prefer-method-signature: error
+  tslint/prefer-readonly: error
+  tslint/prefer-switch: error
+  tslint/prefer-template: error
+  tslint/prefer-while: error
+  tslint/promise-function-async: error
+  tslint/radix: error
+  tslint/restrict-plus-operands: error
+  tslint/return-undefined: error
+  tslint/trailing-comma:
+    severity: error
+    options:
+      multiline: never
+      singleline: never
+  tslint/triple-equals: error
+  tslint/one-variable-per-declaration: error
+  tslint/only-arrow-functions:
+    severity: error
+    options:
+      - allow-named-functions
+  tslint/quotemark:
+    severity: error
+    options:
+      - single
+      - jsx-double
+      - avoid-escape
+      - avoid-template
+  tslint/unified-signatures: error
+  tslint/unnecessary-constructor: error
+  # tslint/use-default-type-parameter: error
+  # TODO restore this rule when it will work
+  # react
+  react/jsx-boolean-value:
+    severity: error
+    options: never
+  react/jsx-key: error
+  react/jsx-no-bind: error
+  react/jsx-no-lambda: error
+  react/jsx-no-string-ref: error
+  react/jsx-use-translation-function:
+    severity: error
+    options:
+      - allow-punctuation
+      - allow-htmlentities
+  # clean-code
+  clean-code/no-complex-conditionals: error
+  clean-code/no-for-each-push: error
+  clean-code/no-map-without-usage: error
+  # sonarts
+  sonarts/arguments-order: off
+  sonarts/bool-param-default: error
+  sonarts/no-accessor-field-mismatch: error
+  sonarts/no-all-duplicated-branches: error
+  sonarts/no-alphabetical-sort: error
+  sonarts/no-array-delete: error
+  sonarts/no-case-with-or: error
+  sonarts/no-collapsible-if: error
+  sonarts/no-collection-size-mischeck: error
+  sonarts/no-dead-store: error
+  sonarts/no-duplicate-in-composite: error
+  sonarts/no-duplicated-branches: error
+  sonarts/no-element-overwrite: error
+  sonarts/no-empty-array: error
+  sonarts/no-empty-destructuring: error
+  sonarts/no-gratuitous-expressions: error
+  sonarts/no-identical-conditions: error
+  sonarts/no-identical-expressions: error
+  sonarts/no-ignored-return: error
+  sonarts/no-in-misuse: error
+  sonarts/no-invariant-return: error
+  sonarts/no-inverted-boolean-check: error
+  sonarts/no-misleading-array-reverse: error
+  sonarts/no-misspelled-operator: error
+  sonarts/no-nested-incdec: error
+  sonarts/no-nested-switch: error
+  sonarts/no-nested-template-literals: error
+  sonarts/no-return-type-any: error
+  sonarts/no-self-assignment: error
+  sonarts/no-small-switch: error
+  sonarts/no-unconditional-jump: error
+  sonarts/no-undefined-argument: error
+  sonarts/no-unenclosed-multiline-block: error
+  sonarts/no-unthrown-error: error
+  sonarts/no-unused-array: error
+  sonarts/no-useless-increment: error
+  sonarts/no-useless-intersection: error
+  sonarts/prefer-default-last: error
+  sonarts/prefer-immediate-return: error
+  sonarts/prefer-optional: error
+  sonarts/prefer-promise-shorthand: error
+  sonarts/prefer-type-guard: error
+  sonarts/use-type-alias: error
+  # microsoft
+  microsoft/no-for-in: error
+  microsoft/no-useless-files: error
+  # eslint
+  eslint/no-ex-assign: error
+  eslint/no-extra-boolean-cast: error
+  eslint/ter-no-self-compare: error
+overrides:
+  - files: '**/*.d.ts'
+    rules:
+      tslint/use-default-type-parameter: off

@@ -1,0 +1,54 @@
+{
+  "name": "@teux/hooks",
+  "version": "0.0.0",
+  "description": "React hooks",
+  "private": true,
+  "scripts": {
+    "lint": "wotan",
+    "format": "prettier --write '**/*.{ts,tsx,yaml,json,md}'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "scroll",
+    "parallax",
+    "lazyload"
+  ],
+  "author": "teux",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": [
+      "prettier --write",
+      "wotan --formatter code-frame --fix"
+    ]
+  },
+  "devDependencies": {
+    "@fimbul/heimdall": "0.21.0",
+    "@fimbul/mithotyn": "0.21.0",
+    "@fimbul/wotan": "0.21.1",
+    "cross-env": "^7.0.2",
+    "husky": "4.2.5",
+    "lint-staged": "10.2.11",
+    "prettier": "2.0.5",
+    "react": "16.13.1",
+    "tslint": "6.1.2",
+    "tslint-clean-code": "0.2.10",
+    "tslint-eslint-rules": "5.4.0",
+    "tslint-microsoft-contrib": "6.2.0",
+    "tslint-react": "5.0.0",
+    "tslint-sonarts": "1.9.0",
+    "typescript": "4.0.0-beta"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "types/*"
+    ]
+  }
+}
