@@ -1,0 +1,14 @@
+{
+  "name": "react-static-plugin-extend-babel",
+  "version": "0.0.0",
+  "description": "Extends babel config to compile packages/**",
+  "main": "node.api.js",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/webpack": "4.41.20"
+  },
+  "peerDependencies": {
+    "webpack": "^4.0.0"
+  }
+}

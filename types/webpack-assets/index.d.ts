@@ -1,16 +1,62 @@
-declare module '*.svg' {
-    import { ComponentType, SVGAttributes } from 'react';
-
-    const content: ComponentType<SVGAttributes<SVGElement>>;
-    export default content;
+declare namespace NodeJS {
+    interface ProcessEnv {
+        readonly NODE_ENV: 'development' | 'production' | 'test';
+        readonly PUBLIC_URL: string;
+    }
 }
 
-declare module '*.json' {
-    const content: { [key: string]: unknown };
-    export default content;
+declare module '*.bmp' {
+    const src: string;
+    export default src;
+}
+
+declare module '*.gif' {
+    const src: string;
+    export default src;
+}
+
+declare module '*.jpg' {
+    const src: string;
+    export default src;
+}
+
+declare module '*.jpeg' {
+    const src: string;
+    export default src;
 }
 
 declare module '*.png' {
-    const content: string;
-    export default content;
+    const src: string;
+    export default src;
+}
+
+declare module '*.webp' {
+    const src: string;
+    export default src;
+}
+
+declare module '*.svg' {
+    import * as React from 'react';
+
+    export const ReactComponent: React.FunctionComponent<
+    React.SVGProps<SVGSVGElement> & { title?: string }
+    >;
+
+    const src: string;
+    export default src;
+}
+
+declare module '*.module.css' {
+    const classes: { readonly [key: string]: string };
+    export default classes;
+}
+
+declare module '*.module.scss' {
+    const classes: { readonly [key: string]: string };
+    export default classes;
+}
+
+declare module '*.module.sass' {
+    const classes: { readonly [key: string]: string };
+    export default classes;
 }

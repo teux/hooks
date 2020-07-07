@@ -1,0 +1,23 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "components/*": [
+        "src/components/*"
+      ],
+      "containers/*": [
+        "src/containers/*"
+      ],
+      "types/*": [
+        "types/*"
+      ]
+    },
+  },
+  "exclude": [
+    "artifacts/**/*",
+    "dist/**/*",
+    "public/**/*",
+    "node_modules"
+  ]
+}

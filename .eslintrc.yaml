@@ -14,9 +14,30 @@ parserOptions:
   project: tsconfig.json
   tsconfigRootDir: "."
 plugins:
-  - sonarjs
   - "@typescript-eslint"
+  - emotion
+  - sonarjs
 root: true
 rules:
   "@typescript-eslint/indent": [error, 4]
+  "@typescript-eslint/no-unsafe-assignment": off
+  "@typescript-eslint/no-unsafe-member-access": off
+  "@typescript-eslint/restrict-template-expressions":
+    - error
+    - allowNumber: true
+      allowAny: true
+  emotion/jsx-import: error
+  emotion/import-from-emotion: error
+  emotion/styled-import: error
+  indent: [error, 4]
   import/prefer-default-export: off
+  react/jsx-indent: [error, 4]
+  react/prop-types: off
+  react/no-unescaped-entities: 
+    - error
+    - forbid: 
+      - char: ">"
+        alternatives: ["&gt;"]
+      - char: "<"
+        alternatives: ["&lt;"]
+  
